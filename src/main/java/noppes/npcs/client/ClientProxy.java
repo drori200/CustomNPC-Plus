@@ -80,16 +80,7 @@ import noppes.npcs.client.gui.mainmenu.GuiNpcAI;
 import noppes.npcs.client.gui.mainmenu.GuiNpcAdvanced;
 import noppes.npcs.client.gui.mainmenu.GuiNpcDisplay;
 import noppes.npcs.client.gui.mainmenu.GuiNpcStats;
-import noppes.npcs.client.gui.player.GuiBigSign;
-import noppes.npcs.client.gui.player.GuiCrate;
-import noppes.npcs.client.gui.player.GuiMailbox;
-import noppes.npcs.client.gui.player.GuiMailmanWrite;
-import noppes.npcs.client.gui.player.GuiNPCBankChest;
-import noppes.npcs.client.gui.player.GuiNPCTrader;
-import noppes.npcs.client.gui.player.GuiNpcCarpentryBench;
-import noppes.npcs.client.gui.player.GuiNpcFollower;
-import noppes.npcs.client.gui.player.GuiNpcFollowerHire;
-import noppes.npcs.client.gui.player.GuiTransportSelection;
+import noppes.npcs.client.gui.player.*;
 import noppes.npcs.client.gui.player.companion.GuiNpcCompanionInv;
 import noppes.npcs.client.gui.player.companion.GuiNpcCompanionStats;
 import noppes.npcs.client.gui.player.companion.GuiNpcCompanionTalents;
@@ -430,7 +421,6 @@ public class ClientProxy extends CommonProxy {
 
 		else if (gui == EnumGuiType.CustomGui)
 			return new GuiCustom((ContainerCustomGui)container);
-
 		return null;
 	}
 

@@ -14,7 +14,7 @@ public enum EnumPacketServer {
 	MainmenuAISave(CustomNpcsPermissions.NPC_AI,true), MainmenuAIGet(true),
 	MainmenuInvSave(CustomNpcsPermissions.NPC_INVENTORY, true), MainmenuInvGet(true),
 	MainmenuStatsSave(CustomNpcsPermissions.NPC_STATS, true), MainmenuStatsGet(true),
-	
+
 	MainmenuDisplaySave(CustomNpcsPermissions.NPC_DISPLAY, true), MainmenuDisplayGet(true),
 	ModelDataSave(CustomNpcsPermissions.NPC_DISPLAY, true), 
 	
@@ -31,7 +31,7 @@ public enum EnumPacketServer {
 	JobSpawnerAdd(CustomNpcsPermissions.NPC_ADVANCED, true), JobSpawnerRemove(CustomNpcsPermissions.NPC_ADVANCED, true),
 	RoleCompanionUpdate(CustomNpcsPermissions.NPC_ADVANCED, true),
 	LinkedSet(CustomNpcsPermissions.NPC_ADVANCED, true),
-	
+
 	ClonePreSave(CustomNpcsPermissions.NPC_CLONE), CloneSave(CustomNpcsPermissions.NPC_CLONE), CloneRemove(CustomNpcsPermissions.NPC_CLONE), CloneList,
 
 	ScriptGlobalGuiDataSave(CustomNpcsPermissions.TOOL_SCRIPTER, false),
@@ -89,10 +89,13 @@ public enum EnumPacketServer {
 
 	CustomGuiButton,CustomGuiSlotChange,CustomGuiScrollClick,CustomGuiClose,CustomGuiUnfocused,
 
-    ServerUpdateSkinOverlays;
+	PlayerMainmenuDisplayGet,
+
+	ServerUpdateSkinOverlays;
 
 	public CustomNpcsPermissions.Permission permission = null;
 	public boolean needsNpc = false;
+	public boolean needsPlayer = false;
 
 	EnumPacketServer() {}
 
